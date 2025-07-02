@@ -29,5 +29,35 @@ Tampilan website dibuat **responsif** dan disertai dengan **animasi scroll, efek
 
 ---
 
-## 📂 Struktur Folder (Ringkasan)
+## 🛠️ Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- JavaScript
+- EmailJS (untuk konfirmasi email)
+- GitHub Pages (hosting)
+
+---
+
+## 📌 Link Website
+
+🔗 [Lihat Website](https://portofolionoval.github.io/Website_Tiket_Konser/)
+
+---
+
+## 📝 Keterangan Tambahan
+
+- Website ini murni dibuat menggunakan HTML, CSS, dan JavaScript (tanpa framework/library besar).
+- Semua fitur dikerjakan dan dikembangkan sendiri sebagai bentuk evaluasi pemahaman materi perkuliahan.
+
+---
+
+## 🙋‍♂️ Pembuat
+
+Nama: **Noval**  
+NIM: [tuliskan jika perlu]  
+Kelas: [tuliskan jika perlu]  
+Email: [opsional]
+
+---
 
