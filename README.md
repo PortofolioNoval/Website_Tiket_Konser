@@ -76,7 +76,6 @@ Tampilan website dibuat dengan **animasi scroll, efek glass, dan sidebar navigas
 Nama: **Noval Dimas Saputra**  
 NIM: **231011402207**  
 Kelas: **04TPLP031** 
-No. Whatsapp: **081382268081**
 
 ---
 
