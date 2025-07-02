@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concert-VallxXx</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
+  <header id="mainHeader">
+    <h1>Concert-VallxXx</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="src/tour.html">Tour</a>
+        <a href="src/merch.html">Merch</a>
+        <a href="src/contact.html">Contact</a>
+      </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left fade-in">
+      <h1>Even In Arcadia </h1>
+        <h2> Sleep Token</h2>
+          <p>Nantikan tour kami ke ketiga negara kalian, jangan sampai kehabisan tiket!!!</p>
+            <a href="#pesan-tiket" class="hero-btn fade-in">Dapatkan Tiket</a>
+      <div class="client-logos fade-in">
+        <p>tour ke tiga negara</p>
+          <img src="img/Indonesia.jpg" alt="IND" />
+          <img src="img/inggris.jpg" alt="ENG" />
+          <img src="img/amerika.jpg" alt="USA" />
+      </div>
+    </div>
+
+    <div class="hero-right fade-in">
+      <div class="hero-image fade-in">
+        <img src="img/hero.jpg" alt="House" />
+          <div class="badge-top fade-in">
+            <p><strong>#1</strong><br>BillBoard</p>
+            <p><strong>18+</strong><br>Award Winning</p>
+          </div>
+          <div class="badge-bottom fade-in">
+            <p><strong>100k+</strong>Pendengar Bulanan</p>
+              <div class="avatars">
+                <img src="img/footage4.jpg" alt=""/>
+                <img src="img/footage3.jpg" alt=""/>
+                <img src="img/footage2.jpg" alt=""/>
+                <img src="img/footage1.jpg" alt=""/>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-visual">
+    <div class="intro-left fade-in">EVEN IN ARCADIA</div>
+      <div class="intro-center fade-in">
+        <img src="img/logo.png" alt="Sleep Token Artwork" />
+      </div>
+      
+      <div class="intro-right fade-in">
+        <a href="https://open.spotify.com/artist/2n2RSaZqBuUUukhbLlpnE6?si=RhAhSjkOTt6a_dynJSaxYw"><img src="img/spotify.png" alt="Spotify" class="social-icon"></a>
+        <a href=""><img src="img/apple.png" alt="Apple Music" class="social-icon"></a>
+        <a href="https://www.youtube.com/@Sleep-Token"><img src="img/youtube.png" alt="YouTube" class="social-icon"></a>
+        <a href="https://www.instagram.com/dmcls_?igsh=MXdwbmk4amN5NXE2cA=="><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="https://sleeptoken.lnk.to/EvenInArcadia" class="listen-btn">LISTEN / WATCH</a>
+      </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-wrapper fade-in">
+      <iframe src="https://youtube.com/embed/MxEyVaU-djI?si=rbZ3XmgonQ62uxMD" title="YouTube video" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="fade-in">TOUR DATES</h2>
+      <div class="buttons fade-in">
+        <button>LONDON TOUR PRESALE NOW</button>
+      </div>
+        <div class="tour-list fade-in">
+          <div class="tour-item">
+            <div class="date-location">AUG 12 • LONDON, UK</div>
+              <div class="venue">lovia big hall</div>
+          </div>
+          <div class="tour-item">
+            <div class="date-location">NOV 16 • BOGOR, IND</div>
+              <div class="venue">Stadion Pekansari</div>
+          </div>
+          <div class="tour-item centered">
+              <div class="date-location">DES 22 • LOS ANGLES, USA</div>
+            <div class="venue">Hollywood Bowl</div>
+          </div>
+        </div>
+    <div class="tour-card fade-in">
+      <img src="img/ticket-card.jpg" alt="Tour Dates Image">
+    </div>
+  </section>
+
+  <section class="ticket-section" id="pesan-tiket">
+    <h3 class="fade-in">Pesan Tiketmu Sekarang!!!</h3>
+      <form class="ticket-form" id="ticketForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+          <p>Harga per tiket: <strong id="ticketPrice">Rp150.000</strong></p>
+            <select id="quantity">
+              <option value="1">1 Ticket</option>
+              <option value="2">2 Tickets</option>
+              <option value="3">3 Tickets</option>
+              <option value="4">4 Tickets</option>
+            </select>
+          <p>Total harga: <strong id="totalPrice">Rp150.000</strong></p>
+            <select id="paymentMethod" required>
+              <option value="" disabled selected>Pilih Jenis Pembayaran</option>
+              <option value="Transfer Bank">Transfer Bank</option>
+              <option value="QRIS">QRIS</option>
+              <option value="OVO">OVO</option>
+              <option value="Gopay">Gopay</option>
+              <option value="Dana">Dana</option>
+            </select>
+          <button type="submit">Beli Tiket</button>
+      </form>
+      
+  </section>
+
+    <div class="ticket-popup" id="ticketPopup">
+      <div class="ticket-card">
+        <h2>🎟️ Tiket Berhasil Dipesan!</h2>
+          <p>Terima kasih telah memesan tiket konser melalui website ini.</p>
+      </div>
+    </div>
+
+  <footer>
+    <div class="footer-logo fade-in">
+      <img src="img/logo2.png" alt="Sleep Token Logo">
+    </div>
+      <div class="footer-column fade-in">
+        <h4>SEARCH</h4>
+      </div>
+      <div class="footer-column fade-in">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li>HELP CENTER</li>
+          <li>REFUND POLICY</li>
+          <li>PRIVACY POLICY</li>
+          <li>TERMS OF SERVICE</li>
+        </ul>
+      </div>
+      <div class="footer-column fade-in">
+        <h4>FOLLOW</h4>
+          <div class="footer-email fade-in">
+            <input type="text" placeholder="Enter your email">
+              <img src="img/email.png" alt="Email">
+          </div>
+        <div class="footer-social fade-in">
+          <a href="https://www.instagram.com/dmcls_?igsh=MXdwbmk4amN5NXE2cA==n"><i class="fab fa-instagram"></i></a>
+          <a href="facebook.com/sleeptoken"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@Sleep-Token"><i class="fab fa-youtube"></i></a>
+          <a href="http://wa.me/6281382268081"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom fade-in">
+        <p>&copy; 2025 Concert-VallxXx</p>
+        <p>Hak cipta by <span>Noval Dimas Saputra</span></p>
+      </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script/index.js"></script>
+</body>
+</html>

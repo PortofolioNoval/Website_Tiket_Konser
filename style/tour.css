@@ -1,0 +1,126 @@
+:root {
+  --textColor:#d8c186;
+  --solidColor:#0f120f;
+  --transparantColor:#0f120fb6;
+}
+
+@font-face {
+  font-family: 'myCustomFont';
+  src: url('../fonts/MORGIAH.otf') format('truetype');
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif, Arial, sans-serif;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+  background: url('../img/background.jpg') center/cover no-repeat fixed;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--solidColor);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--textColor);
+}
+
+.tour-section {
+  padding: 8rem 2rem 4rem;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background: var(--transparantColor);
+}
+
+.tour-section h2 {
+  font-family: 'myCustomFont', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--textColor);
+}
+
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tour-card {
+  background: var(--solidColor);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.tour-card h3 {
+  color: #f2c94c;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tour-card p {
+  margin: 0.3rem 0;
+}
+
+.tour-card .actions {
+  margin-top: 1rem;
+}
+
+.tour-card a {
+  text-decoration: none;
+  color: var(--solidColor);
+  background: var(--textColor);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tour-card a:hover {
+  background: white;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+

@@ -1,0 +1,253 @@
+:root {
+  --textColor:#d8c186;
+  --solidColor:#0f120f;
+  --transparantColor:#0f120fb6;
+}
+
+@font-face {
+  font-family: 'myCustomFont';
+  src: url('../fonts/MORGIAH.otf') format('truetype');
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif, Arial, sans-serif;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+  background: url('../img/background.jpg') center/cover no-repeat fixed;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--solidColor);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--textColor);
+}
+
+/* Fullscreen Contact Section */
+.contact-section {
+  width: 100vw;
+  height: 100vh;
+  background: var(--transparantColor);
+  color: var(--textColor);
+  font-family: 'Cinzel', serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  gap: 5rem;
+}
+
+.contact-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'myCustomFont', sans-serif;
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-socials a {
+  border: 1px solid var(--textColor);
+  padding: 10px 12px;
+  display: inline-block;
+  color: var(--textColor);
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #1d1f1d;
+  color: #fff;
+  border: 1px solid #3a3a3a;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-form button {
+  background: var(--textColor);
+  color: var(--solidColor);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e6d3a3;
+}
+
+.popup-glass-bg {
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-glass-bg.show {
+  display: flex;      /* WAJIB agar muncul */
+  opacity: 1;
+}
+
+.popup-glass-bg.hidden {
+  display: none;
+}
+
+.popup-glass-card {
+  background: rgba(255, 255, 255, 0.15);  /* Lebih terang */
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);           /* Blur lebih kuat */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  text-align: center;
+  color: white;
+  max-width: 320px;
+}
+
+.popup-icon {
+  background-color: #38a169;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.popup-glass-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup-glass-card p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.popup-glass-bg.hidden {
+  display: none;
+}
+.popup-glass-bg.show {
+  display: flex;
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .contact-text, .contact-form {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

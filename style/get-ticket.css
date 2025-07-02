@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #333;
+  gap: 1rem;
+}
+
+header img {
+  height: 40px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.breadcrumb a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.ticket-container {
+  max-width: 900px;
+  margin: 2rem 0 2rem 3rem;
+  padding: 0 1rem;
+}
+
+.ticket-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticket-info img {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.ticket-info-details {
+  flex: 1;
+}
+
+.ticket-info-details h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.ticket-info-details p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.ticket-info-details a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid white;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+}
+
+.soldout-banner {
+  background: #1b1b1b;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.stage-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

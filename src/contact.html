@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact-page</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header id="mainHeader" class="fade-in">
+    <h1>Concert-VallxXx</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="tour.html">Tour</a>
+        <a href="merch.html">Merch</a>
+        <a href="#">Contact</a>
+      </nav>
+</header>
+
+  <section class="contact-section">
+    <div class="contact-text fade-in">
+      <h2>Contact Us</h2>
+        <p>Jika Anda memiliki pertanyaan, ide kolaborasi, atau pertanyaan pemesanan, jangan ragu untuk menghubungi kami di bawah ini.</p>
+          <div class="contact-socials fade-in">
+            <a href="https://www.instagram.com/dmcls_?igsh=MXdwbmk4amN5NXE2cA==n"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com/sleeptoken"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@Sleep-Token"><i class="fab fa-youtube"></i></a>
+            <a href="http://wa.me/6281382268081"><i class="fab fa-whatsapp"></i></a>
+          </div>
+    </div>
+      <form class="contact-form fade-in" id="contactForm">
+        <input type="text" name="name" id="contactName" placeholder="Nama" required />
+        <input type="email" name="email" id="contactEmail" placeholder="Email" required />
+        <textarea name="message" id="contactMessage" placeholder="Pesan..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+  </section>
+
+<div id="successPopup" class="popup-glass-bg hidden">
+  <div class="popup-glass-card">
+    <div class="popup-icon">
+      <i class="fas fa-check"></i>
+    </div>
+      <h3>Success</h3>
+      <p>Pesan berhasil dikirim!</p>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="../script/contact.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
